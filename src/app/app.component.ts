@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-discount-calculator';
+
+public PriceInput!: number
+public DiscountAmountInput!: number
+public Answer!: number
+
+discount(){
+this.Answer = this.PriceInput - (this.PriceInput*(this.DiscountAmountInput/100));
+}
 }
